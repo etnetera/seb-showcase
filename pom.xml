@@ -4,7 +4,7 @@
 	<groupId>cz.etnetera</groupId>
 	<artifactId>seb-showcase</artifactId>
 	<packaging>jar</packaging>
-	<version>0.1.0</version>
+	<version>0.1.1</version>
 	<name>Seb showcase</name>
 
 	<properties>
@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>cz.etnetera</groupId>
 			<artifactId>reesmo-adapter-junit-seb</artifactId>
-			<version>0.1.0</version>
+			<version>0.1.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
