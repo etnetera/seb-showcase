@@ -1,26 +1,25 @@
 package cz.etnetera.seb.showcase.module;
 
-import java.util.List;
-
+import cz.etnetera.seb.module.Module;
 import org.openqa.selenium.support.FindBy;
 
-import cz.etnetera.seb.module.Module;
+import java.util.List;
 
 public class ArticlesModule extends Module {
 
 	@FindBy(css = "article.post")
-	protected List<ArticleBoxModule> articleBoxEls;
+	protected List<ArticleBoxModule> articleBoxEl;
 	
-	public List<ArticleBoxModule> getArticleBoxEls() {
-		return articleBoxEls;
+	public List<ArticleBoxModule> getArticleBoxEl() {
+		return articleBoxEl;
 	}
 
 	public ArticleBoxModule getFirstArticleBoxEl() {
-		return articleBoxEls.get(0);
+		return articleBoxEl.get(0);
 	}
 	
 	public ArticleBoxModule getRandomArticleBoxEl() {
-		return articleBoxEls.get((int) (Math.random() * articleBoxEls.size()));
+		return articleBoxEl.get((int) (Math.random() * articleBoxEl.size()));
 	}
 
 }
